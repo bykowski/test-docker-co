@@ -9,7 +9,7 @@ services:
   kafka:
     image: 'bitnami/kafka:latest'
     ports:
-      - '9092:9092'
+      - '80:9092'
     environment:
       - KAFKA_BROKER_ID=1
       - KAFKA_LISTENERS=PLAINTEXT://:9092
